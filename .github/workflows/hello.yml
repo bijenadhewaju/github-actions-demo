@@ -20,15 +20,14 @@ jobs:
       - name: Show Current Directory
         run: pwd
       
-      - name: List Files
+      - name: List Files Before Checkout
         run: ls 
 
       - name: Checkout Code
         uses: actions/checkout@v4
         
-      - name: List Files
+      - name: List Files After Checkout
         run: ls
 
-      - uses: actions/checkout@v4
       - name: Read File
         run: cat index.txt
