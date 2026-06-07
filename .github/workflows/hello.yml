@@ -22,3 +22,13 @@ jobs:
       
       - name: List Files
         run: ls 
+
+      - name: Checkout Code
+        uses: actions/checkout@v4
+        
+      - name: List Files
+        run: ls
+
+      - uses: actions/checkout@v4
+      - name: Read File
+        run: cat index.txt
