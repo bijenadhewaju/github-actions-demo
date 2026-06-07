@@ -2,8 +2,11 @@ name: Hello Workflow
 
 on:
   push:
+
+jobs:
+  hello:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Print message
-        run: echo "Hello, World!"
+      - name: Print Message
+        run: echo "hello message "
